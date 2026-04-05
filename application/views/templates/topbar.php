@@ -24,7 +24,7 @@
             </span>
             <div class="dropdown-divider"></div>
             <a class="dropdown-item" href="<?= site_url('auth/logout')?>">
-                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>                Logout
+                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Logout
             </a>
             </div>
         </li>

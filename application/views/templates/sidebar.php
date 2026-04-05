@@ -5,18 +5,21 @@
             </div>
             <div calss="sidebar-brand-text mx-3">perpustakaan</div>
         </a>
+    <hr class="sidebar-divider my-0">
+    <li class="nav-item active">
+        <a class="nav-link" href="#">
+            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <span>Dashboard</span>
+        </a>
+    </li>
+
     <li class="nav-item">
         <a class="nav-link" href="<?= site_url('kategori'); ?>">
             <i class="fas fa-fw fa-folder"></i>
             <span>kategori</span>
         </a>
     </li>
-    <li class="nav-item">
-        <a class="nav-link" href="<?= site_url('buku'); ?>">
-            <i class="fas fa-fw fa-book"></i>
-            <span>Buku</span>
-        </a>
-    </li>
+
 </ul>
-<div id="content-wapper" class="d-flex flex-column">
+<div id="content-wrapper" class="d-flex flex-column">
     <div id="content">
