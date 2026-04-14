@@ -12,11 +12,16 @@
             <span>Dashboard</span>
         </a>
     </li>
-
     <li class="nav-item">
         <a class="nav-link" href="<?= site_url('kategori'); ?>">
             <i class="fas fa-fw fa-folder"></i>
-            <span>kategori</span>
+            <span>Kategori</span>
+        </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="<?= site_url('buku'); ?>">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Buku</span>
         </a>
     </li>
 
