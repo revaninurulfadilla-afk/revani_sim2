@@ -18,12 +18,29 @@
             <span>Kategori</span>
         </a>
     </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="<?= site_url('anggota'); ?>">
+            <i class="fas fa-fw fa-users"></i>
+            <span>Anggota</span>
+        </a>
+    </li>
+
     <li class="nav-item">
         <a class="nav-link" href="<?= site_url('buku'); ?>">
             <i class="fas fa-fw fa-folder"></i>
             <span>Buku</span>
         </a>
     </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="<?= site_url('peminjaman'); ?>">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>peminjaman</span>
+        </a>
+    </li>
+
+
 
 </ul>
 <div id="content-wrapper" class="d-flex flex-column">
