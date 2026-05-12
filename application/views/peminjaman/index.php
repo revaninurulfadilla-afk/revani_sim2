@@ -18,7 +18,7 @@
         <th>Status</th>
         <th>Aksi</th>
     </tr>
-<</thead>
+</thead>
 <tbody>
 <?php $no=1; foreach($data as $d): ?>
 <tr>

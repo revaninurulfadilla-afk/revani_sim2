@@ -5,20 +5,25 @@
             </div>
             <div calss="sidebar-brand-text mx-3">perpustakaan</div>
         </a>
-    <hr class="sidebar-divider my-0">
+     <hr class="sidebar-divider my-0">
+
+    <!-- Dashboard -->
     <li class="nav-item active">
         <a class="nav-link" href="<?= site_url('dashboard'); ?>">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span>
         </a>
     </li>
+
+    <!-- Kategori -->
     <li class="nav-item">
         <a class="nav-link" href="<?= site_url('kategori'); ?>">
-            <i class="fas fa-fw fa-folder"></i>
+            <i class="fas fa-fw fa-list"></i>
             <span>Kategori</span>
         </a>
     </li>
 
+    <!-- Anggota -->
     <li class="nav-item">
         <a class="nav-link" href="<?= site_url('anggota'); ?>">
             <i class="fas fa-fw fa-users"></i>
@@ -26,22 +31,25 @@
         </a>
     </li>
 
+    <!-- Buku -->
     <li class="nav-item">
         <a class="nav-link" href="<?= site_url('buku'); ?>">
-            <i class="fas fa-fw fa-folder"></i>
+            <i class="fas fa-fw fa-book"></i>
             <span>Buku</span>
         </a>
     </li>
 
+    <!-- Peminjaman -->
     <li class="nav-item">
         <a class="nav-link" href="<?= site_url('peminjaman'); ?>">
-            <i class="fas fa-fw fa-folder"></i>
-            <span>peminjaman</span>
+            <i class="fas fa-fw fa-exchange-alt"></i>
+            <span>Peminjaman</span>
         </a>
     </li>
 
-
+    <hr class="sidebar-divider">
 
 </ul>
+
 <div id="content-wrapper" class="d-flex flex-column">
-    <div id="content">
+<div id="content">

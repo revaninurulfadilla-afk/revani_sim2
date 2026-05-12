@@ -78,7 +78,7 @@ class Anggota extends CI_Controller {
             'status'         => $this->input->post('status')
         ];
 
-        $this->anggota_model->update($Nomor_anggota, $data);
+        $this->Anggota_model->update($Nomor_anggota, $data);
         redirect('anggota');
     }
 }

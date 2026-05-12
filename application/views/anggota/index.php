@@ -2,7 +2,7 @@
 <h2 class="h3 mb-4 text-gray-800">Data Anggota</h2>
 
 <a href="<?= site_url('anggota/tambah'); ?>" class="btn btn-primary mb-3">
-    <i class="fas fa-plus"></i>Tambah</a>
+    <i class="fas fa-plus"></i> Tambah</a>
 
     <div class="card shadow mb-4">
         <div class="card-body">
@@ -11,12 +11,12 @@
 <thead class="thead-dark">
     <tr>
         <th>No</th>
-        <th>Nomor Anggota</th>
+        <th >Nomor Anggota</th>
         <th>Nama</th>
         <th>Telepon</th>
         <th>Email</th>
         <th>Status</th>
-        <th>Aksi</th>
+        <th width="15%">Aksi</th>
     </tr>
 </thead>
 <tbody>
@@ -27,7 +27,9 @@
         <td><?= $N->Nama; ?></td>
         <td><?= $N->Telepon; ?></td>
         <td><?= $N->Email; ?></td>
-        <td><?= $N->status == 1 ? 'Aktif' : 'Tidak Aktif'; ?></td>
+
+        <td><?= ucfirst($N->status); ?></td>
+
         <td>
             <a href="<?= site_url('anggota/edit/'.$N->Nomor_anggota); ?>" class="btn btn-warning btn-sm">Edit</a>
             
