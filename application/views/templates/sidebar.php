@@ -7,7 +7,6 @@
         </a>
      <hr class="sidebar-divider my-0">
 
-    <!-- Dashboard -->
     <li class="nav-item active">
         <a class="nav-link" href="<?= site_url('dashboard'); ?>">
             <i class="fas fa-fw fa-tachometer-alt"></i>
@@ -15,7 +14,6 @@
         </a>
     </li>
 
-    <!-- Kategori -->
     <li class="nav-item">
         <a class="nav-link" href="<?= site_url('kategori'); ?>">
             <i class="fas fa-fw fa-list"></i>
@@ -23,7 +21,6 @@
         </a>
     </li>
 
-    <!-- Anggota -->
     <li class="nav-item">
         <a class="nav-link" href="<?= site_url('anggota'); ?>">
             <i class="fas fa-fw fa-users"></i>
@@ -31,7 +28,6 @@
         </a>
     </li>
 
-    <!-- Buku -->
     <li class="nav-item">
         <a class="nav-link" href="<?= site_url('buku'); ?>">
             <i class="fas fa-fw fa-book"></i>
@@ -39,7 +35,6 @@
         </a>
     </li>
 
-    <!-- Peminjaman -->
     <li class="nav-item">
         <a class="nav-link" href="<?= site_url('peminjaman'); ?>">
             <i class="fas fa-fw fa-exchange-alt"></i>

@@ -53,13 +53,6 @@ value="<?= $buku->tahun; ?>" required>
 <input type="number" name="stok" class="form-control"
 value="<?= $buku->stok; ?>" required>
 </div>
-
-<div class="form-group">
-<label>Lokasi Rak</label>
-<input type="text" name="lokasi_rak" class="form-control"
-value="<?= $buku->lokasi_rak; ?>" required>
-</div>
-
 <br>
 
 <button type="submit" class="btn btn-primary">Simpan</button>
