@@ -15,7 +15,7 @@
         <th>Nama</th>
         <th>Telepon</th>
         <th>Email</th>
-        <th>Status</th>
+        <th width="15%">Status</th>
         <th width="15%">Aksi</th>
     </tr>
 </thead>
@@ -28,8 +28,23 @@
         <td><?= $N->Telepon; ?></td>
         <td><?= $N->Email; ?></td>
 
-        <td><?= ucfirst($N->status); ?></td>
+        <td class="align-middle">
 
+            <?php if($N->status == 'aktif'): ?>
+
+                <span class="btn btn-success btn-sm">
+                    Aktif
+                </span>
+
+            <?php else: ?>
+
+                <span class="btn btn-danger btn-sm">
+                    Tidak Aktif
+                </span>
+
+            <?php endif; ?>
+
+            </td>
         <td>
             <a href="<?= site_url('anggota/edit/'.$N->Nomor_anggota); ?>" class="btn btn-warning btn-sm">Edit</a>
             

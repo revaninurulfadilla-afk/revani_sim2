@@ -45,6 +45,8 @@ class Peminjaman_model extends CI_Model{
         $today = date('Y-m-d');
         $jatuh = $pinjam->tanggal_jatuh_tempo;
 
+        // Hitung denda
+
         $selisih = strtotime($today) - strtotime($jatuh);
         $terlambat = $selisih > 0 ? floor($selisih / 86400) : 0;
         $denda = $terlambat * 1000;
@@ -60,7 +62,7 @@ class Peminjaman_model extends CI_Model{
         $this->db->update('peminjaman', ['status'=> 'kembali']);
 
         $this->db->set('stok', 'stok + 1', FALSE);
-        $this->db->where('kode_buku', $detail->buku_id);
+        $this->db->where('kode_buku', $detail->$buku_id);
         $this->db->update('buku');
     }
 }

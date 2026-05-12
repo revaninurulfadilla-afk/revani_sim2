@@ -30,8 +30,8 @@
         <td><?= $b->nama_kategori; ?></td>
         <td><?= $b->stok; ?></td>
         <td>
-            <a href="<?= site_url('buku/edit/'.$b->kode_buku); ?>">Edit</a>
-            <a href="<?= site_url('buku/hapus/'.$b->kode_buku); ?>"
+            <a href="<?= site_url('buku/edit/'.$b->kode_buku); ?>"class="btn btn-warning btn-sm">Edit</a>
+            <a href="<?= site_url('buku/hapus/'.$b->kode_buku); ?>" class="btn btn-danger btn-sm"
             onclick="return confirm('yakin?')">Hapus</a>
         </td>
     </tr>
