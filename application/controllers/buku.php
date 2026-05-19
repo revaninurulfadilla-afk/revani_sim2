@@ -82,4 +82,28 @@ class Buku extends CI_Controller {
             redirect('buku');
         }
     }
+      public function cetak_buku()
+    {
+        $penulis = $this->input->get('penulis');
+
+        $this->db->select('buku.*, kategori.nama_kategori');
+        $this->db->from('buku');
+
+        $this->db->join(
+            'kategori',
+            'kategori.id = buku.id_kategori'
+        );
+
+        if($penulis){
+            $this->db->like('penulis', $penulis);
+        }
+
+        $data['data'] = $this->db->get()->result();
+        $data['penulis'] = $penulis;
+
+        $this->load->view(
+            'laporan_buku/cetak_buku',
+            $data
+        );
+    }
 }

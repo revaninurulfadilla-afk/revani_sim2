@@ -42,10 +42,26 @@
         </a>
     </li>
 
+    <hr class="sidebar-divider my-0">
+
     <li class="nav-item">
         <a class="nav-link" href="<?= site_url('laporan/peminjaman'); ?>">
             <i class="fas fa-file-alt"></i>
             <span>Laporan Peminjaman</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="<?= site_url('laporan_buku'); ?>">
+            <i class="fas fa-file-alt"></i>
+            <span>Laporan Buku</span>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="<?= site_url('laporan_anggota'); ?>">
+            <i class="fas fa-file-alt"></i>
+            <span>Laporan Anggota</span>
         </a>
     </li>
 
